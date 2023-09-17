@@ -1,0 +1,409 @@
+body{
+    min-height: 100vh;
+    background-color: #170FFF;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    margin: 24px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-wrapper{
+    width: 100%;
+    background-color: #F1F1F1;
+
+    margin-right: 12px;
+    padding: 24px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+ 
+    background-color: #00CF71;
+
+    padding: 24px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box{
+    display: flex;
+}
+
+
+.input-box > input {
+    width: 300px;
+    height: 24px;
+    background-color: #00CF71;
+
+    padding: 4px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.todo-list {
+    max-height: 600px;
+    overflow: scroll;
+
+    padding-inline: 20px;
+}
+
+.todo-list::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-list li {
+    padding: 12px;
+    border-bottom: 2px solid #000000;
+
+    display: flex;
+    align-items: center;
+}
+
+.todo-like{
+    flex: 1;
+}
+
+.todo-item{
+    flex: 8;
+}
+
+.done .todo-item {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.done .check {
+    visibility: hidden;
+}
+
+.todo-manage{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like{
+    cursor: pointer;
+    font-size: 18px !important;
+    color: #170FFF;
+}
+
+.check{
+    color: #00CF71;
+}
+
+.clear{
+    color: #170FFF;
+}
+
+.introduce-wrapper{
+    width: 100%;
+    background-color: #F1F1F1;
+
+    margin-left: 12px;
+    padding: 24px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-section{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile {
+    width: 100%;
+    min-width: 200px;
+    background-color: #ffffff;
+
+    margin-right: 12px;
+    padding: 24px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#profile img {
+    width: 100%;
+
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+#profile h1, h3 {
+    width: 100%;
+
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+#image1 {
+    min-width: 200px;
+
+    background-image: url("../web4/KakaoTalk_Photo_2023-08-03-19-20-58 002.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-left: 12px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.item{
+    flex: 1;
+}
+
+.vertical-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#introduce-text{
+    overflow-y: scroll;
+    background-color: #ffffff;
+
+    margin-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+#introduce-text::-webkit-scrollbar {
+    display: none; 
+}
+
+#image2{
+    background-image: url("../web4/pattern.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.footer{
+    background-color: #00CF71;
+
+    border-top: 2px solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 545px) and (max-width: 1040px) {
+    
+    .wrapper{
+    min-height: 100%;
+    margin: 24px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .todo-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 0 0 12px 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduce-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 12px 0 0 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        #image2{ min-height: 100px;}
+    }
+    
+    .todo-list li {
+        padding: 12px;
+        border-bottom: 2px solid #000000;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    .todo-like{
+        flex: 1;
+    }
+    
+    .todo-item{
+        flex: 8;
+    }
+    
+    .done .todo-item {
+        text-decoration: line-through;
+        color: #ccc;
+    }
+    
+    .done .check {
+        visibility: hidden;
+    }
+    
+    .todo-manage{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .like{
+        cursor: pointer;
+        font-size: 18px !important;
+        color: #170FFF;
+    }
+    
+    .check{
+        color: #00CF71;
+    }
+    
+    .clear{
+        color: #170FFF;
+    }
+
+
+}}
+
+@media (min-width: 545px) and (max-width: 1040px) {
+    .wrapper{
+        margin: 24px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 0 0 12px 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduce-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 12px 0 0 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image2 {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 545px) {
+    .wrapper{
+        margin: 24px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 0 0 12px 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduce-wrapper{
+        width: 100%;
+        background-color: #F1F1F1;
+    
+        margin: 12px 0 0 0;
+        padding: 24px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    
+        flex: 1;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image1 {
+        display: none;
+    }
+
+    #image2 {
+        min-height: 100px;
+    }
+}
